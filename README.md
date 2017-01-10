@@ -53,6 +53,12 @@ Loads in everything in order of ascending ID number. Mainly used for showing the
 ######Delete Comics
 Deletes a comic at the given ID number or the given ID numbers (multiple number selection explained in the usability section).
 
+######Read Me
+Launches a read me in notepad that gives instructions on how to use the software.
+
+######Print
+Launches the default Java print window to allow the user to print out their table using whatever sorting restrictions they set forth.
+
 ####Exception Handling/Keeping Things Safe
 My dad is admittedly not the most tech savvy person in the world so I had to be thorough with making everything respond clearly and remove any remote chance of bugs in every circumstance. Originally I had tried using JFormattedTextField to validate input, but making my own method for input validation ended up being simpler and gave me more control. Error messages pop up if the user tries to input any non-integer into an integer text box, either ID or issue. It will also give an error on inputting numbers into ID that are greater than the total ID number or less than 1.
 
@@ -62,3 +68,6 @@ When a user doesn't input anything in any of the text boxes when adding a comic,
 Since the original version was completed I've been trying to improve the ease of use of this program. I'm making it so that if you type input of the format number/dash/number into issue number when you are adding comics, it will add issues with the same parameters from the low number to the high. So for the above example, if you entered 7-11 for issue number when adding the comic, it would add issues 7 through 11 with each other parameter being identical (Main = punisher, Publisher = Marvel, etc.). Because many runs of comics stick with the same artist and author, I thought this would make the software faster to use.
 
 I've also added a couple of common sense featuers that I'm not sure why I didn't think of before, like a button that clears every text box, in addition to displaying the updated database whenever a change is made (originally you had to press Load Comic every single time).
+
+##Future improvements
+I need to clean up some of the unused code, format things better, format the GUI for better resizing, and add some parameters to each comic (such as cover artist and notes).
